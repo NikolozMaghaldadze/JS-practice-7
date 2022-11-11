@@ -1,12 +1,14 @@
 .main-wrapper {
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin-bottom: -30px;
+  padding: 40px;
 }
 
 .posts-wrap {
   background-color: cornflowerblue;
   width: 80%;
-  height: 80px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +16,7 @@
   font-size: 20px;
   margin: 30px auto;
   flex-direction: column;
+  padding: 30px 30px;
 }
 
 .header-1 {
@@ -26,4 +29,112 @@
 .header-2 {
   display: inline-block;
   font-size: 25px;
+}
+
+.close {
+  position: fixed;
+  top: 30px;
+  right: 80px;
+  font-size: 40px;
+  opacity: 100%;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+}
+
+.close-plus {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: coral;
+  opacity: 80%;
+  font-size: 30px;
+  padding: 90px;
+  display: none;
+}
+
+.paragraph {
+  background-color: cornflowerblue;
+  color: #fff;
+  opacity: 100%;
+}
+
+.active {
+  display: block;
+}
+
+.delbutton {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  border-radius: 50%;
+  font-size: 45px;
+  color: deeppink;
+  cursor: pointer;
+}
+.overlay-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: coral;
+  font-size: 30px;
+  z-index: 2;
+  padding: 90px;
+  display: none;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#saxeli {
+  font-size: 30px;
+  font-weight: 700;
+}
+#titlepost {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.add {
+  width: 300;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+.overlay-add-active {
+  display: block;
 }
