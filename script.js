@@ -71,6 +71,7 @@ function createNewDiv(x) {
   parentBlock.appendChild(deleteButton);
 
   block.appendChild(parentBlock);
+  console.log(parentBlock);
 }
 
 function overlayFunction(x) {
